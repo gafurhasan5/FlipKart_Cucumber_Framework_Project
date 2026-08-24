@@ -1,0 +1,254 @@
+2026-08-23 23:56:54 INFO  [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2026-08-23 23:56:54 INFO  [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+2026-08-23 23:56:54 INFO  [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-08-23 23:56:54 INFO  [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-08-23 23:56:54 INFO  [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-08-23 23:56:54 INFO  [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-08-23 23:56:54 INFO  [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-08-23 23:56:54 INFO  [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-08-23 23:56:54 INFO  [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-08-23 23:56:55 INFO  [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 29 ms.
+2026-08-23 23:56:55 INFO  [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-08-23 23:56:55 INFO  [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-08-23 23:56:55 INFO  [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-08-23 23:56:55 INFO  [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-08-23 23:56:55 INFO  [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-08-23 23:56:55 INFO  [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-08-23 23:56:55 INFO  [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-08-23 23:56:55 INFO  [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-08-23 23:56:55 INFO  [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-08-23 23:56:55 INFO  [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-08-23 23:56:55 INFO  [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-08-23 23:56:55 INFO  [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-08-23 23:56:55 INFO  [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-08-23 23:56:55 INFO  [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-08-23 23:56:55 INFO  [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 5 ms.
+2026-08-23 23:56:55 INFO  [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2026-08-23 23:56:55 INFO  [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-08-23 23:56:55 INFO  [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-08-23 23:56:55 INFO  [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-08-23 23:56:55 INFO  [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-08-23 23:56:55 INFO  [main] Utils - [TestNG] Running:
+  C:\Users\Admin\AppData\Local\Temp\testng-eclipse--7815688\testng-customsuite.xml
+
+2026-08-23 23:56:55 INFO  [main] Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 13 ms.
+2026-08-23 23:57:07 INFO  [main] SearchPage - SearchPage initialized
+2026-08-23 23:57:07 INFO  [main] SearchPage - Attempting to close popup
+2026-08-23 23:57:08 INFO  [main] SearchPage - Popup closed successfully
+2026-08-23 23:57:09 INFO  [main] SearchPage - Home page displayed: true
+2026-08-23 23:57:09 INFO  [main] SearchWithExcelStepsDefinitions - User is on Flipkart home page
+2026-08-23 23:57:09 INFO  [main] SearchPage - SearchPage initialized
+2026-08-23 23:57:09 INFO  [main] SearchWithExcelStepsDefinitions - SearchPage object created
+2026-08-23 23:57:09 INFO  [main] SearchWithExcelStepsDefinitions - Starting product search using Excel
+2026-08-23 23:57:10 INFO  [main] SearchPage - Total Excel rows found: 8
+2026-08-23 23:57:10 INFO  [main] SearchPage - Searching product from Excel row 1: Mobile
+2026-08-23 23:57:11 INFO  [main] SearchPage - Clicking search button
+2026-08-23 23:57:13 INFO  [main] SearchPage - Search submitted successfully
+2026-08-23 23:57:13 INFO  [main] SearchPage - Search completed for product: Mobile
+2026-08-23 23:57:16 INFO  [main] SearchPage - Navigated back after searching product: Mobile
+2026-08-23 23:57:16 INFO  [main] SearchPage - Searching product from Excel row 2: TV
+2026-08-23 23:57:17 INFO  [main] SearchPage - Clicking search button
+2026-08-23 23:57:24 INFO  [main] SearchPage - Search submitted successfully
+2026-08-23 23:57:24 INFO  [main] SearchPage - Search completed for product: TV
+2026-08-23 23:57:29 INFO  [main] SearchPage - Navigated back after searching product: TV
+2026-08-23 23:57:29 INFO  [main] SearchPage - Searching product from Excel row 3: Camera
+2026-08-23 23:57:30 INFO  [main] SearchPage - Clicking search button
+2026-08-23 23:57:34 INFO  [main] SearchPage - Search submitted successfully
+2026-08-23 23:57:34 INFO  [main] SearchPage - Search completed for product: Camera
+2026-08-23 23:57:42 INFO  [main] SearchPage - Navigated back after searching product: Camera
+2026-08-23 23:57:42 INFO  [main] SearchPage - Searching product from Excel row 4: Fan
+2026-08-23 23:57:43 INFO  [main] SearchPage - Clicking search button
+2026-08-23 23:57:45 INFO  [main] SearchPage - Search submitted successfully
+2026-08-23 23:57:45 INFO  [main] SearchPage - Search completed for product: Fan
+2026-08-23 23:57:47 INFO  [main] SearchPage - Navigated back after searching product: Fan
+2026-08-23 23:57:47 INFO  [main] SearchPage - Searching product from Excel row 5: Charger
+2026-08-23 23:57:48 INFO  [main] SearchPage - Clicking search button
+2026-08-23 23:57:51 INFO  [main] SearchPage - Search submitted successfully
+2026-08-23 23:57:51 INFO  [main] SearchPage - Search completed for product: Charger
+2026-08-23 23:57:54 INFO  [main] SearchPage - Navigated back after searching product: Charger
+2026-08-23 23:57:54 INFO  [main] SearchPage - Searching product from Excel row 6: Washing Machine
+2026-08-23 23:57:55 INFO  [main] SearchPage - Clicking search button
+2026-08-23 23:57:57 INFO  [main] SearchPage - Search submitted successfully
+2026-08-23 23:57:57 INFO  [main] SearchPage - Search completed for product: Washing Machine
+2026-08-23 23:57:59 INFO  [main] SearchPage - Navigated back after searching product: Washing Machine
+2026-08-23 23:57:59 INFO  [main] SearchPage - Searching product from Excel row 7: Toy
+2026-08-23 23:58:00 INFO  [main] SearchPage - Clicking search button
+2026-08-23 23:58:03 INFO  [main] SearchPage - Search submitted successfully
+2026-08-23 23:58:03 INFO  [main] SearchPage - Search completed for product: Toy
+2026-08-23 23:58:06 INFO  [main] SearchPage - Navigated back after searching product: Toy
+2026-08-23 23:58:06 INFO  [main] SearchPage - Searching product from Excel row 8: Fridge
+2026-08-23 23:58:07 INFO  [main] SearchPage - Clicking search button
+2026-08-23 23:58:09 INFO  [main] SearchPage - Search submitted successfully
+2026-08-23 23:58:09 INFO  [main] SearchPage - Search completed for product: Fridge
+2026-08-23 23:58:12 INFO  [main] SearchPage - Navigated back after searching product: Fridge
+2026-08-23 23:58:12 INFO  [main] SearchPage - Excel search completed. Total products searched: 8
+2026-08-23 23:58:12 INFO  [main] SearchWithExcelStepsDefinitions - Excel product search completed
+2026-08-23 23:58:12 INFO  [main] SearchWithExcelStepsDefinitions - Starting search result validation
+2026-08-23 23:58:12 INFO  [main] SearchWithExcelStepsDefinitions - Validating product: Mobile
+2026-08-23 23:58:12 INFO  [main] SearchWithExcelStepsDefinitions - PASS: Product found - Mobile
+2026-08-23 23:58:12 INFO  [main] SearchWithExcelStepsDefinitions - Validating product: TV
+2026-08-23 23:58:12 INFO  [main] SearchWithExcelStepsDefinitions - PASS: Product found - TV
+2026-08-23 23:58:12 INFO  [main] SearchWithExcelStepsDefinitions - Validating product: Camera
+2026-08-23 23:58:12 INFO  [main] SearchWithExcelStepsDefinitions - PASS: Product found - Camera
+2026-08-23 23:58:12 INFO  [main] SearchWithExcelStepsDefinitions - Validating product: Fan
+2026-08-23 23:58:12 INFO  [main] SearchWithExcelStepsDefinitions - PASS: Product found - Fan
+2026-08-23 23:58:12 INFO  [main] SearchWithExcelStepsDefinitions - Validating product: Charger
+2026-08-23 23:58:12 INFO  [main] SearchWithExcelStepsDefinitions - PASS: Product found - Charger
+2026-08-23 23:58:12 INFO  [main] SearchWithExcelStepsDefinitions - Validating product: Washing Machine
+2026-08-23 23:58:12 INFO  [main] SearchWithExcelStepsDefinitions - PASS: Product found - Washing Machine
+2026-08-23 23:58:12 INFO  [main] SearchWithExcelStepsDefinitions - Validating product: Toy
+2026-08-23 23:58:12 INFO  [main] SearchWithExcelStepsDefinitions - PASS: Product found - Toy
+2026-08-23 23:58:12 INFO  [main] SearchWithExcelStepsDefinitions - Validating product: Fridge
+2026-08-23 23:58:12 INFO  [main] SearchWithExcelStepsDefinitions - PASS: Product found - Fridge
+2026-08-23 23:58:12 INFO  [main] SearchWithExcelStepsDefinitions - Search validation completed successfully
+2026-08-23 23:58:17 INFO  [main] Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@11d1735e: 185 ms
+2026-08-23 23:58:17 INFO  [main] Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@7853363c: 3 ms
+2026-08-23 23:58:17 INFO  [main] Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@7c206b14: 20 ms
+2026-08-23 23:58:17 INFO  [main] Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@a1cb94: 12 ms
+2026-08-23 23:58:17 INFO  [main] Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@156ff70f: 16 ms
+2026-08-23 23:58:17 INFO  [main] Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@c5a2d5: 0 ms
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 36 ms.
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 8 ms.
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2026-08-24 00:04:21 INFO  [main] Utils - [TestNG] Running:
+  C:\Users\Admin\AppData\Local\Temp\testng-eclipse--1381108750\testng-customsuite.xml
+
+2026-08-24 00:04:21 INFO  [main] Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 11 ms.
+2026-08-24 00:04:23 INFO  [main] Hook - ==============================
+2026-08-24 00:04:23 INFO  [main] Hook - Cucumber @Before hook started
+2026-08-24 00:04:23 INFO  [main] Hook - ==============================
+2026-08-24 00:04:23 INFO  [main] BaseTest - Starting browser launch
+2026-08-24 00:04:23 INFO  [main] BaseTest - Browser configured: chrome
+2026-08-24 00:04:27 INFO  [main] BaseTest - WebDriver initialized successfully
+2026-08-24 00:04:27 INFO  [main] BaseTest - Browser window maximized
+2026-08-24 00:04:27 INFO  [main] BaseTest - Navigating to application URL: https://www.flipkart.com/
+2026-08-24 00:04:30 INFO  [main] BaseTest - Application launched successfully
+2026-08-24 00:04:30 INFO  [main] Hook - Browser setup completed successfully
+2026-08-24 00:04:30 INFO  [main] ReusableFunctions - ReusableFunctions initialized
+2026-08-24 00:04:30 INFO  [main] SearchPage - SearchPage initialized
+2026-08-24 00:04:30 INFO  [main] SearchPage - Attempting to close popup
+2026-08-24 00:04:31 INFO  [main] SearchPage - Popup closed successfully
+2026-08-24 00:04:32 INFO  [main] ReusableFunctions - Element displayed status [By.xpath: //html[@lang='en-IN']]: true
+2026-08-24 00:04:32 INFO  [main] SearchPage - Home page displayed: true
+2026-08-24 00:04:32 INFO  [main] SearchWithExcelStepsDefinitions - User is on Flipkart home page
+2026-08-24 00:04:32 INFO  [main] ReusableFunctions - ReusableFunctions initialized
+2026-08-24 00:04:32 INFO  [main] SearchPage - SearchPage initialized
+2026-08-24 00:04:32 INFO  [main] SearchWithExcelStepsDefinitions - SearchPage object created
+2026-08-24 00:04:32 INFO  [main] SearchWithExcelStepsDefinitions - Starting product search using Excel
+2026-08-24 00:04:33 INFO  [main] SearchPage - Total Excel rows found: 8
+2026-08-24 00:04:33 INFO  [main] SearchPage - Searching product from Excel row 1: Mobile
+2026-08-24 00:04:34 INFO  [main] SearchPage - Clicking search button
+2026-08-24 00:04:37 INFO  [main] SearchPage - Search submitted successfully
+2026-08-24 00:04:37 INFO  [main] SearchPage - Search completed for product: Mobile
+2026-08-24 00:04:37 INFO  [main] ReusableFunctions - Navigating back
+2026-08-24 00:04:44 INFO  [main] ReusableFunctions - Navigated back successfully
+2026-08-24 00:04:44 INFO  [main] SearchPage - Navigated back after searching product: Mobile
+2026-08-24 00:04:44 INFO  [main] SearchPage - Searching product from Excel row 2: TV
+2026-08-24 00:04:45 INFO  [main] SearchPage - Clicking search button
+2026-08-24 00:04:50 INFO  [main] SearchPage - Search submitted successfully
+2026-08-24 00:04:50 INFO  [main] SearchPage - Search completed for product: TV
+2026-08-24 00:04:50 INFO  [main] ReusableFunctions - Navigating back
+2026-08-24 00:04:56 INFO  [main] ReusableFunctions - Navigated back successfully
+2026-08-24 00:04:56 INFO  [main] SearchPage - Navigated back after searching product: TV
+2026-08-24 00:04:56 INFO  [main] SearchPage - Searching product from Excel row 3: Camera
+2026-08-24 00:04:57 INFO  [main] SearchPage - Clicking search button
+2026-08-24 00:05:11 INFO  [main] SearchPage - Search submitted successfully
+2026-08-24 00:05:11 INFO  [main] SearchPage - Search completed for product: Camera
+2026-08-24 00:05:11 INFO  [main] ReusableFunctions - Navigating back
+2026-08-24 00:05:14 INFO  [main] ReusableFunctions - Navigated back successfully
+2026-08-24 00:05:14 INFO  [main] SearchPage - Navigated back after searching product: Camera
+2026-08-24 00:05:15 INFO  [main] SearchPage - Searching product from Excel row 4: Fan
+2026-08-24 00:05:16 INFO  [main] SearchPage - Clicking search button
+2026-08-24 00:05:18 INFO  [main] SearchPage - Search submitted successfully
+2026-08-24 00:05:18 INFO  [main] SearchPage - Search completed for product: Fan
+2026-08-24 00:05:18 INFO  [main] ReusableFunctions - Navigating back
+2026-08-24 00:05:21 INFO  [main] ReusableFunctions - Navigated back successfully
+2026-08-24 00:05:21 INFO  [main] SearchPage - Navigated back after searching product: Fan
+2026-08-24 00:05:21 INFO  [main] SearchPage - Searching product from Excel row 5: Charger
+2026-08-24 00:05:22 INFO  [main] SearchPage - Clicking search button
+2026-08-24 00:05:24 INFO  [main] SearchPage - Search submitted successfully
+2026-08-24 00:05:24 INFO  [main] SearchPage - Search completed for product: Charger
+2026-08-24 00:05:24 INFO  [main] ReusableFunctions - Navigating back
+2026-08-24 00:05:27 INFO  [main] ReusableFunctions - Navigated back successfully
+2026-08-24 00:05:27 INFO  [main] SearchPage - Navigated back after searching product: Charger
+2026-08-24 00:05:27 INFO  [main] SearchPage - Searching product from Excel row 6: Washing Machine
+2026-08-24 00:05:29 INFO  [main] SearchPage - Clicking search button
+2026-08-24 00:05:32 INFO  [main] SearchPage - Search submitted successfully
+2026-08-24 00:05:32 INFO  [main] SearchPage - Search completed for product: Washing Machine
+2026-08-24 00:05:33 INFO  [main] ReusableFunctions - Navigating back
+2026-08-24 00:05:35 INFO  [main] ReusableFunctions - Navigated back successfully
+2026-08-24 00:05:35 INFO  [main] SearchPage - Navigated back after searching product: Washing Machine
+2026-08-24 00:05:35 INFO  [main] SearchPage - Searching product from Excel row 7: Toy
+2026-08-24 00:05:37 INFO  [main] SearchPage - Clicking search button
+2026-08-24 00:05:39 INFO  [main] SearchPage - Search submitted successfully
+2026-08-24 00:05:39 INFO  [main] SearchPage - Search completed for product: Toy
+2026-08-24 00:05:39 INFO  [main] ReusableFunctions - Navigating back
+2026-08-24 00:05:42 INFO  [main] ReusableFunctions - Navigated back successfully
+2026-08-24 00:05:42 INFO  [main] SearchPage - Navigated back after searching product: Toy
+2026-08-24 00:05:42 INFO  [main] SearchPage - Searching product from Excel row 8: Fridge
+2026-08-24 00:05:43 INFO  [main] SearchPage - Clicking search button
+2026-08-24 00:05:46 INFO  [main] SearchPage - Search submitted successfully
+2026-08-24 00:05:46 INFO  [main] SearchPage - Search completed for product: Fridge
+2026-08-24 00:05:46 INFO  [main] ReusableFunctions - Navigating back
+2026-08-24 00:05:50 INFO  [main] ReusableFunctions - Navigated back successfully
+2026-08-24 00:05:50 INFO  [main] SearchPage - Navigated back after searching product: Fridge
+2026-08-24 00:05:50 INFO  [main] SearchPage - Excel search completed. Total products searched: 8
+2026-08-24 00:05:50 INFO  [main] SearchWithExcelStepsDefinitions - Excel product search completed
+2026-08-24 00:05:50 INFO  [main] SearchWithExcelStepsDefinitions - Starting search result validation
+2026-08-24 00:05:50 INFO  [main] SearchWithExcelStepsDefinitions - Validating product: Mobile
+2026-08-24 00:05:50 INFO  [main] SearchWithExcelStepsDefinitions - PASS: Product found - Mobile
+2026-08-24 00:05:50 INFO  [main] SearchWithExcelStepsDefinitions - Validating product: TV
+2026-08-24 00:05:50 INFO  [main] SearchWithExcelStepsDefinitions - PASS: Product found - TV
+2026-08-24 00:05:50 INFO  [main] SearchWithExcelStepsDefinitions - Validating product: Camera
+2026-08-24 00:05:50 INFO  [main] SearchWithExcelStepsDefinitions - PASS: Product found - Camera
+2026-08-24 00:05:50 INFO  [main] SearchWithExcelStepsDefinitions - Validating product: Fan
+2026-08-24 00:05:50 INFO  [main] SearchWithExcelStepsDefinitions - PASS: Product found - Fan
+2026-08-24 00:05:50 INFO  [main] SearchWithExcelStepsDefinitions - Validating product: Charger
+2026-08-24 00:05:50 INFO  [main] SearchWithExcelStepsDefinitions - PASS: Product found - Charger
+2026-08-24 00:05:50 INFO  [main] SearchWithExcelStepsDefinitions - Validating product: Washing Machine
+2026-08-24 00:05:50 INFO  [main] SearchWithExcelStepsDefinitions - PASS: Product found - Washing Machine
+2026-08-24 00:05:50 INFO  [main] SearchWithExcelStepsDefinitions - Validating product: Toy
+2026-08-24 00:05:50 INFO  [main] SearchWithExcelStepsDefinitions - PASS: Product found - Toy
+2026-08-24 00:05:50 INFO  [main] SearchWithExcelStepsDefinitions - Validating product: Fridge
+2026-08-24 00:05:50 INFO  [main] SearchWithExcelStepsDefinitions - PASS: Product found - Fridge
+2026-08-24 00:05:50 INFO  [main] SearchWithExcelStepsDefinitions - Search validation completed successfully
+2026-08-24 00:05:50 INFO  [main] Hook - ==============================
+2026-08-24 00:05:50 INFO  [main] Hook - Cucumber @After hook started for scenario: Validate product search using Excel
+2026-08-24 00:05:50 INFO  [main] Hook - TEST PASSED: Validate product search using Excel
+2026-08-24 00:05:50 INFO  [main] Hook - Closing browser after scenario: Validate product search using Excel
+2026-08-24 00:05:50 INFO  [main] BaseTest - Closing browser
+2026-08-24 00:05:51 INFO  [main] BaseTest - Browser closed successfully
+2026-08-24 00:05:51 INFO  [main] Hook - Cucumber @After hook completed
+2026-08-24 00:05:57 INFO  [main] Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@70169464: 266 ms
+2026-08-24 00:05:57 INFO  [main] Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@1dfcf85a: 2 ms
+2026-08-24 00:05:57 INFO  [main] Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@6c1e40d9: 35 ms
+2026-08-24 00:05:58 INFO  [main] Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@12548f9a: 41 ms
+2026-08-24 00:05:58 INFO  [main] Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@681311a7: 19 ms
+2026-08-24 00:05:58 INFO  [main] Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@2c7375da: 8 ms
