@@ -252,3 +252,101 @@
 2026-08-24 00:05:58 INFO  [main] Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@12548f9a: 41 ms
 2026-08-24 00:05:58 INFO  [main] Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@681311a7: 19 ms
 2026-08-24 00:05:58 INFO  [main] Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@2c7375da: 8 ms
+2026-08-25 12:52:43 INFO  [main] Utils - [TestNG] Running:
+  C:\Users\GAHASSAN\OneDrive - Capgemini\Desktop\FlipKart_Project\FlipKart_Cucumber_Framework_Project\testng.xml
+
+2026-08-25 12:52:45 INFO  [main] Hook - ==============================
+2026-08-25 12:52:45 INFO  [main] Hook - Cucumber @Before hook started
+2026-08-25 12:52:45 INFO  [main] Hook - ==============================
+2026-08-25 12:52:45 INFO  [main] BaseTest - Starting browser launch
+2026-08-25 12:52:45 INFO  [main] BaseTest - Browser configured: chrome
+2026-08-25 12:52:51 INFO  [main] BaseTest - WebDriver initialized successfully
+2026-08-25 12:52:51 INFO  [main] BaseTest - Browser window maximized
+2026-08-25 12:52:51 INFO  [main] BaseTest - Navigating to application URL: https://www.flipkart.com/
+2026-08-25 12:52:52 INFO  [main] BaseTest - Application launched successfully
+2026-08-25 12:52:52 INFO  [main] Hook - Browser setup completed successfully
+2026-08-25 12:52:52 INFO  [main] ReusableFunctions - ReusableFunctions initialized
+2026-08-25 12:52:52 INFO  [main] SearchPage - SearchPage initialized
+2026-08-25 12:52:52 INFO  [main] SearchPage - Attempting to close popup
+2026-08-25 12:53:09 INFO  [main] Hook - ==============================
+2026-08-25 12:53:09 INFO  [main] Hook - Cucumber @After hook started for scenario: Validate product search using Excel
+2026-08-25 12:53:09 ERROR [main] Hook - TEST FAILED: Validate product search using Excel
+2026-08-25 12:53:09 INFO  [main] Hook - Taking screenshot for failed scenario
+2026-08-25 12:53:09 INFO  [main] ReusableFunctions - ReusableFunctions initialized
+2026-08-25 12:53:09 INFO  [main] ReusableFunctions - Taking screenshot: Validate_product_search_using_Excel
+2026-08-25 12:53:09 ERROR [main] ReusableFunctions - Failed to take screenshot: Validate_product_search_using_Excel
+org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=151.0.7922.138)
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f4a04929b5582df392499bef6cd67efd, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\GAHASSAN\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62358}, goog:processID: 14504, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62358/devtoo..., se:cdpVersion: 151.0.7922.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f4a04929b5582df392499bef6cd67efd
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:686)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:387)
+	at com.resuableFunctions.ReusableFunctions.takeScreenshot(ReusableFunctions.java:468)
+	at com.ui.hooks.Hook.tearDown(Hook.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:130)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:47)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:93)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+2026-08-25 12:53:09 ERROR [main] Hook - Screenshot path is null
+2026-08-25 12:53:09 INFO  [main] Hook - Closing browser after scenario: Validate product search using Excel
+2026-08-25 12:53:09 INFO  [main] BaseTest - Closing browser
+2026-08-25 12:53:10 INFO  [main] BaseTest - Browser closed successfully
+2026-08-25 12:53:10 INFO  [main] Hook - Cucumber @After hook completed

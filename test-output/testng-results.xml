@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-24T00:04:21 IST" name="Default suite" finished-at="2026-08-24T00:05:57 IST" duration-ms="95913">
+  <suite started-at="2026-08-25T12:52:43 IST" name="Suite" finished-at="2026-08-25T12:53:14 IST" duration-ms="30103">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.TestRunner@294a6b8e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.TestRunner@6e4566f1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-08-24T00:04:21 IST" name="Default test" finished-at="2026-08-24T00:05:57 IST" duration-ms="95913">
+    <test started-at="2026-08-25T12:52:43 IST" name="FlipkartAutomation" finished-at="2026-08-25T12:53:14 IST" duration-ms="30103">
       <class name="com.TestRunner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.TestRunner.TestRunner@294a6b8e]" started-at="2026-08-24T00:04:21 IST" name="setUpClass" finished-at="2026-08-24T00:04:22 IST" duration-ms="1233" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.TestRunner.TestRunner@6e4566f1]" started-at="2026-08-25T12:52:43 IST" name="setUpClass" finished-at="2026-08-25T12:52:44 IST" duration-ms="877" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7be7c052]]>
+                <![CDATA[org.testng.TestRunner@6b9697ae]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.TestRunner@294a6b8e]" started-at="2026-08-24T00:04:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-24T00:05:51 IST" duration-ms="88345" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.TestRunner@6e4566f1]" started-at="2026-08-25T12:52:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-25T12:53:10 IST" duration-ms="25129" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -34,14 +34,57 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=151.0.7922.138) (error code: "target frame detached")
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f4a04929b5582df392499bef6cd67efd, findElement {using=xpath, value=//span[@class='b3wTlE']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\GAHASSAN\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62358}, goog:processID: 14504, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62358/devtoo..., se:cdpVersion: 151.0.7922.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f4a04929b5582df392499bef6cd67efd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=151.0.7922.138) (error code: "target frame detached")
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f4a04929b5582df392499bef6cd67efd, findElement {using=xpath, value=//span[@class='b3wTlE']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\GAHASSAN\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62358}, goog:processID: 14504, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62358/devtoo..., se:cdpVersion: 151.0.7922.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f4a04929b5582df392499bef6cd67efd
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:172)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
+at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:756)
+at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:749)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:210)
+at com.resuableFunctions.ReusableFunctions.click(ReusableFunctions.java:48)
+at com.Pages.SearchPage.clickPopUp(SearchPage.java:79)
+at com.stepDefinitions.SearchStepsDefinition.close_the_pop(SearchStepsDefinition.java:25)
+at ✽.close the pop(file:///C:/Users/GAHASSAN/OneDrive%20-%20Capgemini/Desktop/FlipKart_Project/FlipKart_Cucumber_Framework_Project/src/test/resources/features/Search.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.TestRunner.TestRunner@294a6b8e]" started-at="2026-08-24T00:05:51 IST" name="tearDownClass" finished-at="2026-08-24T00:05:57 IST" duration-ms="6172" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.TestRunner.TestRunner@6e4566f1]" started-at="2026-08-25T12:53:10 IST" name="tearDownClass" finished-at="2026-08-25T12:53:14 IST" duration-ms="4021" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- com.TestRunner.TestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- FlipkartAutomation -->
+  </suite> <!-- Suite -->
 </testng-results>
