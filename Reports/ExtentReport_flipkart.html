@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Aug 24, 2026 12:04:21 am</span></a>
+<a href="#"><span class="badge badge-primary">Sept 19, 2026 01:51:05 pm</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
@@ -72,6 +77,7 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -79,7 +85,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@tc006</a>
+<a class="dropdown-item" href="#">@tc004</a><a class="dropdown-item" href="#">@tc005</a><a class="dropdown-item" href="#">@tc003</a><a class="dropdown-item" href="#">@tc002</a><a class="dropdown-item" href="#">@tc006</a><a class="dropdown-item" href="#">@tc001</a>
 </ul>
 </li>
 </ul>
@@ -90,9 +96,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Flipkart Search functionality</p>
+            <p class="name">Flipkart Add to Cart functionality</p>
             <p class="text-sm">
-              <span>00:04:23</span> / <span>00:01:27:846</span>
+              <span>13:51:06</span> / <span>00:00:13:429</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -100,11 +106,99 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Flipkart Search functionality</h5>
-<span class='badge badge-success'>08.24.2026 00:04:23</span>
-<span class='badge badge-danger'>08.24.2026 00:05:51</span>
-<span class='badge badge-default'>00:01:27:846</span>
+<h5 class="test-status text-pass">Flipkart Add to Cart functionality</h5>
+<span class='badge badge-success'>09.19.2026 13:51:06</span>
+<span class='badge badge-danger'>09.19.2026 13:51:20</span>
+<span class='badge badge-default'>00:00:13:429</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user
+I want to add product in addTocart for products on Flipkart
+So that I can view relevant search results</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Verify user can add a product to cart</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.stepDefinitions.SearchStepsDefinition.launch_flipkart_application()">
+                <span>Given launch the Flipkart Application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.SearchStepsDefinition.close_the_pop()">
+                <span>When close the pop</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.SearchStepsDefinition.it_should_navigate_to_home_pages()">
+                <span>Then It should Navigate to Home Pages</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.AddToCartStepsDefintions.user_is_on_flipkart_homepage()">
+                <span>Given user is on Flipkart homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.AddToCartStepsDefintions.user_searches_for(java.lang.String)">
+                <span>When user searches for "iPhone 15"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.AddToCartStepsDefintions.user_selects_the_product_from_the_search_results()">
+                <span>And user selects the product from the search results</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.AddToCartStepsDefintions.user_clicks_on_add_to_cart()">
+                <span>And user clicks on Add to Cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.AddToCartStepsDefintions.the_product_should_be_added_to_the_cart()">
+                <span>Then the product should be added to the cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.AddToCartStepsDefintions.the_cart_should_display_the_selected_product()">
+                <span>And the cart should display the selected product</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="14"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Flipkart Search functionality</p>
+            <p class="text-sm">
+              <span>13:51:20</span> / <span>00:03:15:342</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Flipkart Search functionality</h5>
+<span class='badge badge-success'>09.19.2026 13:51:20</span>
+<span class='badge badge-danger'>09.19.2026 13:54:35</span>
+<span class='badge badge-default'>00:03:15:342</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
@@ -117,7 +211,455 @@ So that I can view relevant search results</div>
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Validate product search using Excel</div>
+        <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>To validate the search functionality</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.stepDefinitions.SearchStepsDefinition.launch_flipkart_application()">
+                <span>Given launch the Flipkart Application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.SearchStepsDefinition.close_the_pop()">
+                <span>When close the pop</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.SearchStepsDefinition.it_should_navigate_to_home_pages()">
+                <span>Then It should Navigate to Home Pages</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.SearchStepsDefinition.user_enter_the_text_in_search_field()">
+                <span>Given user enter the text in search field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.SearchStepsDefinition.user_click_the_search_button()">
+                <span>When user click the search button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.FilterStepsDefinitions.select_the_brand()">
+                <span>And select the brand</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.FilterStepsDefinitions.select_the_ram()">
+                <span>And select the Ram</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.FilterStepsDefinitions.select_the_battery_capacity()">
+                <span>And Select the battery capacity</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.FilterStepsDefinitions.select_minimum_and_maximum_amount()">
+                <span>And select minimum and maximum amount</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.FilterStepsDefinitions.it_should_display_the_relevant_result()">
+                <span>Then it should display the relevant result</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="28"><span class="badge log fail-bg mr-2">Fail</span>To validate the search functionality for earbuds</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.stepDefinitions.SearchStepsDefinition.launch_flipkart_application()">
+                <span>Given launch the Flipkart Application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.SearchStepsDefinition.close_the_pop()">
+                <span>When close the pop</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.SearchStepsDefinition.it_should_navigate_to_home_pages()">
+                <span>Then It should Navigate to Home Pages</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.SearchStepsDefinition.user_enter_in_search_field(java.lang.String)">
+                <span>Given user enter "Earbuds" in search field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.SearchStepsDefinition.user_click_the_search_button()">
+                <span>When user click the search button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.FilterStepsDefinitions.select_the_ear_budsbrand()">
+                <span>And select the EarBudsbrand</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.FilterStepsDefinitions.select_brandminimum_and_brandmaximum_amount()">
+                <span>And select brandminimum and brandmaximum amount</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.stepDefinitions.FilterStepsDefinitions.select_the_features()">
+                <span>And select the features</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //div[@title='Fast Charging']//label//input[@type='checkbox'] to be clickable, but the element was not visible.
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.83, chrome: {chromedriverVersion: 152.0.7977.82 (d04cdb24d67b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49188}, goog:processID: 6640, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49188/devtoo..., se:cdpVersion: 152.0.7977.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fc6189cc90e4d9a1d04daea1a6691957
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.resuableFunctions.ReusableFunctions.click(ReusableFunctions.java:48)
+	at com.Pages.FilterPage.clickFeature(FilterPage.java:166)
+	at com.stepDefinitions.FilterStepsDefinitions.select_the_features(FilterStepsDefinitions.java:63)
+	at ?.select the features(file:///C:/Shopping-Site_Flipkart/FlipKart_Project/src/test/resources/features/Search.feature:30)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.stepDefinitions.FilterStepsDefinitions.select_the_color()">
+                <span>And select the color</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.stepDefinitions.FilterStepsDefinitions.it_should_display_the_relevant_earbuds_result()">
+                <span>Then it should display the relevant earbuds result</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.ui.hooks.Hook.tearDown(io.cucumber.java.Scenario)</span>
+      <div>To_validate_the_search_functionality_for_earbuds
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded1.png' src="test-output/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="41"><span class="badge log pass-bg mr-2">Pass</span>To validate the Fashion functionality</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.stepDefinitions.SearchStepsDefinition.launch_flipkart_application()">
+                <span>Given launch the Flipkart Application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.SearchStepsDefinition.close_the_pop()">
+                <span>When close the pop</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.SearchStepsDefinition.it_should_navigate_to_home_pages()">
+                <span>Then It should Navigate to Home Pages</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.FashionStepsDefinitions.user_click_the_fashion_link()">
+                <span>Given user click the fashion link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.FashionStepsDefinitions.i_select_the_sneakers_category()">
+                <span>And I select the Sneakers category</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.FashionStepsDefinitions.i_should_be_redirected_to_the_sneakers_listing_page()">
+                <span>Then I should be redirected to the Sneakers listing page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="50"><span class="badge log pass-bg mr-2">Pass</span>To validate search functionality with different values</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="51"><span class="badge log pass-bg mr-2">Pass</span>To validate search functionality with different values</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given launch the Flipkart Application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When close the pop</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then It should Navigate to Home Pages</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given Enter the "Mobile" in the searchfield</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click the search button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then It should navigate the next page and validate the corresponding page</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="60"><span class="badge log pass-bg mr-2">Pass</span>To validate search functionality with different values</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given launch the Flipkart Application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When close the pop</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then It should Navigate to Home Pages</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given Enter the "TV" in the searchfield</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click the search button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then It should navigate the next page and validate the corresponding page</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="69"><span class="badge log pass-bg mr-2">Pass</span>To validate search functionality with different values</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given launch the Flipkart Application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When close the pop</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then It should Navigate to Home Pages</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given Enter the "Speaker" in the searchfield</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click the search button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then It should navigate the next page and validate the corresponding page</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="78"><span class="badge log pass-bg mr-2">Pass</span>To validate search functionality with different values</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given launch the Flipkart Application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When close the pop</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then It should Navigate to Home Pages</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given Enter the "Laptop" in the searchfield</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click the search button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then It should navigate the next page and validate the corresponding page</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="87"><span class="badge log fail-bg mr-2">Fail</span>validate upto addcart functionality</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.stepDefinitions.SearchStepsDefinition.launch_flipkart_application()">
+                <span>Given launch the Flipkart Application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.SearchStepsDefinition.close_the_pop()">
+                <span>When close the pop</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.SearchStepsDefinition.it_should_navigate_to_home_pages()">
+                <span>Then It should Navigate to Home Pages</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.UptoAddCartStepsDefintions.user_move_to_login_link()">
+                <span>Given user move to login link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepDefinitions.UptoAddCartStepsDefintions.user_click_the_flipkart_plus_zone()">
+                <span>When user click the flipkart plus zone</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.stepDefinitions.UptoAddCartStepsDefintions.mouse_move_to_home_andfurniture_link()">
+                <span>And mouse move to homeAndfurniture link</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.xpath: //span[text()='Home & Furniture'], but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Home & Furniture']"}.
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.83, chrome: {chromedriverVersion: 152.0.7977.82 (d04cdb24d67b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62409}, goog:processID: 15040, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62409/devtoo..., se:cdpVersion: 152.0.7977.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5efd9b579e8ab6e57d260be26d27b63e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.resuableFunctions.ReusableFunctions.waitForVisibility(ReusableFunctions.java:100)
+	at com.resuableFunctions.ReusableFunctions.moveToElement(ReusableFunctions.java:208)
+	at com.Pages.UptoAddCartPage.moveHOmeFurnitureLink(UptoAddCartPage.java:48)
+	at com.stepDefinitions.UptoAddCartStepsDefintions.mouse_move_to_home_andfurniture_link(UptoAddCartStepsDefintions.java:27)
+	at ?.mouse move to homeAndfurniture link(file:///C:/Shopping-Site_Flipkart/FlipKart_Project/src/test/resources/features/Search.feature:59)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.stepDefinitions.UptoAddCartStepsDefintions.click_the_wall_lamp()">
+                <span>And click the wall lamp</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.stepDefinitions.UptoAddCartStepsDefintions.scroll_down_and_click_any_particular_result()">
+                <span>And scroll down and click any particular result</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.stepDefinitions.UptoAddCartStepsDefintions.enter_delivery_pincode_and_click_check_link()">
+                <span>And Enter delivery pincode and click check link</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.stepDefinitions.UptoAddCartStepsDefintions.pincode_should_check_and_displayed_verify_titles()">
+                <span>Then pincode should check and displayed verify titles</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.ui.hooks.Hook.tearDown(io.cucumber.java.Scenario)</span>
+      <div>validate_upto_addcart_functionality
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded2.png' src="test-output/embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="100"><span class="badge log pass-bg mr-2">Pass</span>Validate product search using Excel</div>
       </div>
     </div>
         <div class="collapse">
@@ -167,14 +709,260 @@ So that I can view relevant search results</div>
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view category-view attributes-view">
+<div class="test-wrapper row view exception-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
 <ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">org.openqa.selenium.TimeoutException</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.TimeoutException</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:51:47 pm</td>
+<td>
+<a href="#" class="linked" test-id='14' id='37'>And select the features</a>
+<div class="">
+<span class="badge badge-default">Flipkart Search functionality.To validate the search functionality for earbuds.And select the features</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:53:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='14' id='94'>And mouse move to homeAndfurniture link</a>
+<div class="">
+<span class="badge badge-default">Flipkart Search functionality.validate upto addcart functionality.And mouse move to homeAndfurniture link</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">6</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>5</span>
+</span>
+<p class="name">@tc004</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@tc004</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:52:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='14' id='50'>To validate search functionality with different values</a>
+<div class="">
+<span class="badge badge-default">Flipkart Search functionality.To validate search functionality with different values</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:52:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='14' id='51'>To validate search functionality with different values</a>
+<div class="">
+<span class="badge badge-default">Flipkart Search functionality.To validate search functionality with different values</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:52:34 pm</td>
+<td>
+<a href="#" class="linked" test-id='14' id='60'>To validate search functionality with different values</a>
+<div class="">
+<span class="badge badge-default">Flipkart Search functionality.To validate search functionality with different values</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:52:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='14' id='69'>To validate search functionality with different values</a>
+<div class="">
+<span class="badge badge-default">Flipkart Search functionality.To validate search functionality with different values</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:52:55 pm</td>
+<td>
+<a href="#" class="linked" test-id='14' id='78'>To validate search functionality with different values</a>
+<div class="">
+<span class="badge badge-default">Flipkart Search functionality.To validate search functionality with different values</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@tc005</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@tc005</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:53:05 pm</td>
+<td>
+<a href="#" class="linked" test-id='14' id='87'>validate upto addcart functionality</a>
+<div class="">
+<span class="badge badge-default">Flipkart Search functionality.validate upto addcart functionality</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@tc003</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@tc003</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:52:09 pm</td>
+<td>
+<a href="#" class="linked" test-id='14' id='41'>To validate the Fashion functionality</a>
+<div class="">
+<span class="badge badge-default">Flipkart Search functionality.To validate the Fashion functionality</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@tc002</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@tc002</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:51:34 pm</td>
+<td>
+<a href="#" class="linked" test-id='14' id='28'>To validate the search functionality for earbuds</a>
+<div class="">
+<span class="badge badge-default">Flipkart Search functionality.To validate the search functionality for earbuds</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
@@ -199,11 +987,47 @@ So that I can view relevant search results</div>
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:04:23 am</td>
+<td>13:53:35 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Validate product search using Excel</a>
+<a href="#" class="linked" test-id='14' id='100'>Validate product search using Excel</a>
 <div class="">
 <span class="badge badge-default">Flipkart Search functionality.Validate product search using Excel</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@tc001</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@tc001</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:51:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='14' id='15'>To validate the search functionality</a>
+<div class="">
+<span class="badge badge-default">Flipkart Search functionality.To validate the search functionality</span>
 </div>
 </td>
 </tr>
@@ -224,13 +1048,13 @@ So that I can view relevant search results</div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Aug 24, 2026 12:04:21 am</h3>
+<h3>Sept 19, 2026 01:51:05 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Aug 24, 2026 12:05:51 am</h3>
+<h3>Sept 19, 2026 01:54:35 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -242,7 +1066,7 @@ So that I can view relevant search results</div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -258,12 +1082,12 @@ So that I can view relevant search results</div>
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
+<div><small data-tooltip='50%'>
 <b>1</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> features failed,
+<small data-tooltip='50%'><b>1</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -281,9 +1105,9 @@ So that I can view relevant search results</div>
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
+<div><small data-tooltip='80%'><b>8</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
+<small data-tooltip='20%'><b>2</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -301,10 +1125,10 @@ So that I can view relevant search results</div>
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>6</b> steps passed</small></div>
+<div><small data-tooltip='89%'><b>69</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='2%'><b>2</b> steps failed,
+<b>6</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -320,7 +1144,7 @@ So that I can view relevant search results</div>
 </div></div>
 <script>
 var timeline = {
-"Flipkart Search functionality":87.846
+"Flipkart Add to Cart functionality":13.429,"Flipkart Search functionality":195.342
 };
 </script>
 <div class="row">
@@ -330,7 +1154,47 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
+<td>@tc004</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@tc005</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@tc003</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@tc002</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
 <td>@tc006</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@tc001</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -347,20 +1211,20 @@ var timeline = {
 var statusGroup = {
 parentCount: 5,
 passParent: 1,
-failParent: 0,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
-failChild: 0,
+passChild: 8,
+failChild: 2,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 6,
-failGrandChild: 0,
+passGrandChild: 69,
+failGrandChild: 2,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 6,
 infoGrandChild: 0,
 eventsCount: 5,
 };

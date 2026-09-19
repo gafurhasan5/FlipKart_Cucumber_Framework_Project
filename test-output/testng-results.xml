@@ -1,27 +1,226 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="8" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-24T00:04:21 IST" name="Default suite" finished-at="2026-08-24T00:05:57 IST" duration-ms="95913">
+  <suite started-at="2026-09-15T16:51:28 IST" name="Default suite" finished-at="2026-09-15T16:54:47 IST" duration-ms="199161">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.TestRunner@294a6b8e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-08-24T00:04:21 IST" name="Default test" finished-at="2026-08-24T00:05:57 IST" duration-ms="95913">
+    <test started-at="2026-09-15T16:51:28 IST" name="Default test" finished-at="2026-09-15T16:54:47 IST" duration-ms="199161">
       <class name="com.TestRunner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.TestRunner.TestRunner@294a6b8e]" started-at="2026-08-24T00:04:21 IST" name="setUpClass" finished-at="2026-08-24T00:04:22 IST" duration-ms="1233" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.TestRunner.TestRunner@294a6b8e]" started-at="2026-09-15T16:51:28 IST" name="setUpClass" finished-at="2026-09-15T16:51:29 IST" duration-ms="1191" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7be7c052]]>
+                <![CDATA[org.testng.TestRunner@5feb8e9a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.TestRunner@294a6b8e]" started-at="2026-08-24T00:04:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-24T00:05:51 IST" duration-ms="88345" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.TestRunner@294a6b8e]" started-at="2026-09-15T16:51:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-09-15T16:51:39 IST" duration-ms="10095" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user can add a product to cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Flipkart Add to Cart functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.TestRunner@294a6b8e]" started-at="2026-09-15T16:51:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-09-15T16:51:52 IST" duration-ms="13344" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate the search functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Flipkart Search functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.TestRunner@294a6b8e]" started-at="2026-09-15T16:51:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-09-15T16:52:25 IST" duration-ms="32771" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate the search functionality for earbuds"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Flipkart Search functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //div[@title='Fast Charging']//label//input[@type='checkbox'] to be clickable, but the element was not visible.
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.83, chrome: {chromedriverVersion: 152.0.7977.82 (d04cdb24d67b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53960}, goog:processID: 11260, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53960/devtoo..., se:cdpVersion: 152.0.7977.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dcba7b6eb21983accfce1885c874d4ef]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //div[@title='Fast Charging']//label//input[@type='checkbox'] to be clickable, but the element was not visible.
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.83, chrome: {chromedriverVersion: 152.0.7977.82 (d04cdb24d67b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53960}, goog:processID: 11260, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53960/devtoo..., se:cdpVersion: 152.0.7977.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dcba7b6eb21983accfce1885c874d4ef
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+at com.resuableFunctions.ReusableFunctions.click(ReusableFunctions.java:48)
+at com.Pages.FilterPage.clickFeature(FilterPage.java:166)
+at com.stepDefinitions.FilterStepsDefinitions.select_the_features(FilterStepsDefinitions.java:63)
+at ✽.select the features(file:///C:/Shopping-Site_Flipkart/FlipKart_Project/src/test/resources/features/Search.feature:30)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.TestRunner@294a6b8e]" started-at="2026-09-15T16:52:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-09-15T16:52:38 IST" duration-ms="12814" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate the Fashion functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Flipkart Search functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.TestRunner@294a6b8e]" started-at="2026-09-15T16:52:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-09-15T16:52:47 IST" duration-ms="9278" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate search functionality with different values"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Flipkart Search functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.TestRunner@294a6b8e]" started-at="2026-09-15T16:52:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-09-15T16:52:57 IST" duration-ms="9545" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate search functionality with different values"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Flipkart Search functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.TestRunner@294a6b8e]" started-at="2026-09-15T16:52:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-09-15T16:53:07 IST" duration-ms="9630" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate search functionality with different values"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Flipkart Search functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.TestRunner@294a6b8e]" started-at="2026-09-15T16:53:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-09-15T16:53:16 IST" duration-ms="9202" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate search functionality with different values"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Flipkart Search functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.TestRunner@294a6b8e]" started-at="2026-09-15T16:53:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-09-15T16:53:44 IST" duration-ms="28374" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate upto addcart functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Flipkart Search functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element found by By.xpath: //span[text()='Home & Furniture'], but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Home & Furniture']"}.
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.83, chrome: {chromedriverVersion: 152.0.7977.82 (d04cdb24d67b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49929}, goog:processID: 17516, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49929/devtoo..., se:cdpVersion: 152.0.7977.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5551b5f215b78cf774e9d84aca658e16]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.xpath: //span[text()='Home & Furniture'], but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Home & Furniture']"}.
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.83, chrome: {chromedriverVersion: 152.0.7977.82 (d04cdb24d67b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49929}, goog:processID: 17516, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49929/devtoo..., se:cdpVersion: 152.0.7977.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5551b5f215b78cf774e9d84aca658e16
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+at com.resuableFunctions.ReusableFunctions.waitForVisibility(ReusableFunctions.java:100)
+at com.resuableFunctions.ReusableFunctions.moveToElement(ReusableFunctions.java:208)
+at com.Pages.UptoAddCartPage.moveHOmeFurnitureLink(UptoAddCartPage.java:48)
+at com.stepDefinitions.UptoAddCartStepsDefintions.mouse_move_to_home_andfurniture_link(UptoAddCartStepsDefintions.java:27)
+at ✽.mouse move to homeAndfurniture link(file:///C:/Shopping-Site_Flipkart/FlipKart_Project/src/test/resources/features/Search.feature:59)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.TestRunner@294a6b8e]" started-at="2026-09-15T16:53:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-09-15T16:54:41 IST" duration-ms="56648" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +236,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.TestRunner.TestRunner@294a6b8e]" started-at="2026-08-24T00:05:51 IST" name="tearDownClass" finished-at="2026-08-24T00:05:57 IST" duration-ms="6172" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.TestRunner.TestRunner@294a6b8e]" started-at="2026-09-15T16:54:41 IST" name="tearDownClass" finished-at="2026-09-15T16:54:47 IST" duration-ms="6108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -26,7 +26,7 @@ public class BaseTest {
                     config.getBrowser());
 
             DriverFactory.initializeDriver(
-                    config.getBrowser());
+                    config.getBrowser(), false);
 
             logger.info("WebDriver initialized successfully");
 

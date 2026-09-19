@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>FlipkartAutomation</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>8/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Aug 23 12:36:39 IST 2026</td>
+<td>Started on:</td><td>Mon Sep 14 15:50:58 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>114 seconds (114614 ms)</td>
+<tr><td>Total time:</td><td>191 seconds (191973 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,37 +76,71 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate the search functionality for earbuds", "Flipkart Search functionality"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //div[@title=&apos;Fast Charging&apos;]//label//input[@type=&apos;checkbox&apos;] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@title=&apos;Fast Charging&apos;]//label//input[@type=&apos;checkbox&apos;]&quot;}.
+<td title='com.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate upto addcart functionality", "Flipkart Search functionality"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.xpath: //span[text()=&apos;Home &amp; Furniture&apos;], but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Home &amp; Furniture&apos;]&quot;}.
 (tried for 20 seconds with 500 milliseconds interval)
 Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.18&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.173, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51950}, goog:processID: 2144, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51950/devtoo..., se:cdpVersion: 151.0.7922.173, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9dcf8a8addcba0417343080c5679125e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.83, chrome: {chromedriverVersion: 152.0.7977.82 (d04cdb24d67b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58051}, goog:processID: 16068, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58051/devtoo..., se:cdpVersion: 152.0.7977.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b9ed44ccb197f57340bac7800491112b
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
-	at com.resuableFunctions.ReusableFunctions.click(ReusableFunctions.java:40)
+	at com.resuableFunctions.ReusableFunctions.waitForVisibility(ReusableFunctions.java:100)
+	at com.resuableFunctions.ReusableFunctions.moveToElement(ReusableFunctions.java:208)
+	at com.Pages.UptoAddCartPage.moveHOmeFurnitureLink(UptoAddCartPage.java:48)
+	at com.stepDefinitions.UptoAddCartStepsDefintions.mouse_move_to_home_andfurniture_link(UptoAddCartStepsDefintions.java:27)
+	at ✽.mouse move to homeAndfurniture link(file:///C:/Shopping-Site_Flipkart/FlipKart_Project/src/test/resources/features/Search.feature:59)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2014481872", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2014481872'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.xpath: //span[text()=&apos;Home &amp; Furniture&apos;], but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Home &amp; Furniture&apos;]&quot;}.
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.18&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.83, chrome: {chromedriverVersion: 152.0.7977.82 (d04cdb24d67b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58051}, goog:processID: 16068, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58051/devtoo..., se:cdpVersion: 152.0.7977.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b9ed44ccb197f57340bac7800491112b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.resuableFunctions.ReusableFunctions.waitForVisibility(ReusableFunctions.java:100)
+	at com.resuableFunctions.ReusableFunctions.moveToElement(ReusableFunctions.java:208)
+	at com.Pages.UptoAddCartPage.moveHOmeFurnitureLink(UptoAddCartPage.java:48)
+	at com.stepDefinitions.UptoAddCartStepsDefintions.mouse_move_to_home_andfurniture_link(UptoAddCartStepsDefintions.java:27)
+	at ✽.mouse move to homeAndfurniture link(file:///C:/Shopping-Site_Flipkart/FlipKart_Project/src/test/resources/features/Search.feature:59)
+</pre></div></td>
+<td>28</td>
+<td>com.TestRunner.TestRunner@5e4bd84a</td></tr>
+<tr>
+<td title='com.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate the search functionality for earbuds", "Flipkart Search functionality"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //div[@title=&apos;Fast Charging&apos;]//label//input[@type=&apos;checkbox&apos;] to be clickable, but the element was not visible.
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.18&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.83, chrome: {chromedriverVersion: 152.0.7977.82 (d04cdb24d67b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51134}, goog:processID: 5160, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51134/devtoo..., se:cdpVersion: 152.0.7977.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e932daa2b1a2f0f26f2cac3df74b093f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.resuableFunctions.ReusableFunctions.click(ReusableFunctions.java:48)
 	at com.Pages.FilterPage.clickFeature(FilterPage.java:166)
 	at com.stepDefinitions.FilterStepsDefinitions.select_the_features(FilterStepsDefinitions.java:63)
 	at ✽.select the features(file:///C:/Shopping-Site_Flipkart/FlipKart_Project/src/test/resources/features/Search.feature:30)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1476116591", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1476116591'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //div[@title=&apos;Fast Charging&apos;]//label//input[@type=&apos;checkbox&apos;] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@title=&apos;Fast Charging&apos;]//label//input[@type=&apos;checkbox&apos;]&quot;}.
+</pre></div><a href='#' onClick='toggleBox("stack-trace1258503852", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1258503852'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //div[@title=&apos;Fast Charging&apos;]//label//input[@type=&apos;checkbox&apos;] to be clickable, but the element was not visible.
 (tried for 20 seconds with 500 milliseconds interval)
 Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.18&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.173, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51950}, goog:processID: 2144, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51950/devtoo..., se:cdpVersion: 151.0.7922.173, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9dcf8a8addcba0417343080c5679125e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.83, chrome: {chromedriverVersion: 152.0.7977.82 (d04cdb24d67b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51134}, goog:processID: 5160, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51134/devtoo..., se:cdpVersion: 152.0.7977.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e932daa2b1a2f0f26f2cac3df74b093f
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
-	at com.resuableFunctions.ReusableFunctions.click(ReusableFunctions.java:40)
+	at com.resuableFunctions.ReusableFunctions.click(ReusableFunctions.java:48)
 	at com.Pages.FilterPage.clickFeature(FilterPage.java:166)
 	at com.stepDefinitions.FilterStepsDefinitions.select_the_features(FilterStepsDefinitions.java:63)
 	at ✽.select the features(file:///C:/Shopping-Site_Flipkart/FlipKart_Project/src/test/resources/features/Search.feature:30)
 </pre></div></td>
-<td>33</td>
-<td>com.TestRunner.TestRunner@ae13544</td></tr>
+<td>31</td>
+<td>com.TestRunner.TestRunner@5e4bd84a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -117,45 +151,45 @@ Session ID: 9dcf8a8addcba0417343080c5679125e
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate search functionality with different values", "Flipkart Search functionality"</td>
+<td></td>
+<td>9</td>
+<td>com.TestRunner.TestRunner@5e4bd84a</td></tr>
+<tr>
+<td title='com.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate product search using Excel", "Flipkart Search functionality"</td>
+<td></td>
+<td>53</td>
+<td>com.TestRunner.TestRunner@5e4bd84a</td></tr>
+<tr>
+<td title='com.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate search functionality with different values", "Flipkart Search functionality"</td>
+<td></td>
+<td>9</td>
+<td>com.TestRunner.TestRunner@5e4bd84a</td></tr>
+<tr>
 <td title='com.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate the search functionality", "Flipkart Search functionality"</td>
 <td></td>
-<td>10</td>
-<td>com.TestRunner.TestRunner@ae13544</td></tr>
-<tr>
-<td title='com.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate search functionality with different values", "Flipkart Search functionality"</td>
-<td></td>
-<td>8</td>
-<td>com.TestRunner.TestRunner@ae13544</td></tr>
-<tr>
-<td title='com.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate search functionality with different values", "Flipkart Search functionality"</td>
-<td></td>
-<td>5</td>
-<td>com.TestRunner.TestRunner@ae13544</td></tr>
-<tr>
-<td title='com.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate upto addcart functionality", "Flipkart Search functionality"</td>
-<td></td>
-<td>22</td>
-<td>com.TestRunner.TestRunner@ae13544</td></tr>
-<tr>
-<td title='com.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate search functionality with different values", "Flipkart Search functionality"</td>
-<td></td>
-<td>6</td>
-<td>com.TestRunner.TestRunner@ae13544</td></tr>
+<td>12</td>
+<td>com.TestRunner.TestRunner@5e4bd84a</td></tr>
 <tr>
 <td title='com.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can add a product to cart", "Flipkart Add to Cart functionality"</td>
 <td></td>
-<td>6</td>
-<td>com.TestRunner.TestRunner@ae13544</td></tr>
+<td>9</td>
+<td>com.TestRunner.TestRunner@5e4bd84a</td></tr>
+<tr>
+<td title='com.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate search functionality with different values", "Flipkart Search functionality"</td>
+<td></td>
+<td>9</td>
+<td>com.TestRunner.TestRunner@5e4bd84a</td></tr>
 <tr>
 <td title='com.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate search functionality with different values", "Flipkart Search functionality"</td>
 <td></td>
 <td>8</td>
-<td>com.TestRunner.TestRunner@ae13544</td></tr>
+<td>com.TestRunner.TestRunner@5e4bd84a</td></tr>
 <tr>
 <td title='com.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate the Fashion functionality", "Flipkart Search functionality"</td>
 <td></td>
-<td>8</td>
-<td>com.TestRunner.TestRunner@ae13544</td></tr>
+<td>12</td>
+<td>com.TestRunner.TestRunner@5e4bd84a</td></tr>
 </table><p>
 </body>
 </html>
