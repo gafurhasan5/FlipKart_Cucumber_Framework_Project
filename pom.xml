@@ -7,7 +7,7 @@
     <groupId>FP</groupId>
     <artifactId>FlipKart_Project</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <description>FlipKart End To End Automation Project using Java Selenium Using BDD Framework</description>
+    <description>FlipKart Shopping End To End Automation Project using Java Selenium Using BDD Framework</description>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>   <!-- Use JDK 17 -->
