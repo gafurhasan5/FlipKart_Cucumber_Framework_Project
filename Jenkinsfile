@@ -1,53 +1,28 @@
 pipeline {
-
     agent any
-
-    triggers {
-        // Run automatically when GitHub push webhook is received
-        githubPush()
-
-        // Nightly build at 2:00 AM
-        cron('0 2 * * *')
-    }
-
+     tools{
+       maven "MAVEN_HOME"  
+     }
     stages {
-
-        stage('Checkout') {
+        stage('Build') {
             steps {
-                echo 'Checking out source code...'
-                checkout scm
+                // Get some code from a GitHub repository
+                git 'https://github.com/gafurhasan5/FlipKart_Cucumber_Framework_Project.git'
+
+                // Run the build on a Unix agent. You must have Maven installed.
+               // sh 'mvn -Dmaven.test.failure.ignore=true clean package'
+
+                // To run Maven on a Windows agent, use
+                bat 'mvn -Dmaven.test.failure.ignore=true clean package'
             }
-        }
 
-        stage('Build & Test') {
-            steps {
-                echo 'Running Maven Cucumber/TestNG tests...'
-
-                bat 'mvn clean test -DsuiteXmlFile=testng.xml'
+            post {
+               
+                success {
+                    junit '**/target/surefire-reports/TEST-*.xml'
+                    archiveArtifacts 'target/*.jar'
+                }
             }
-        }
-
-        stage('Test Results') {
-            steps {
-                echo 'Publishing test results...'
-
-                junit '**/target/surefire-reports/TEST-*.xml'
-            }
-        }
-    }
-
-    post {
-
-        always {
-            echo 'Build completed.'
-        }
-
-        success {
-            echo 'BUILD SUCCESSFUL - All tests passed.'
-        }
-
-        failure {
-            echo 'BUILD FAILED - Please check the Jenkins console and test reports.'
         }
     }
 }
